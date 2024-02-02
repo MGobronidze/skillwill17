@@ -5,6 +5,7 @@ const LinkLayouts = () => {
   return (
     <div>
         <Link to={'/'}>Home</Link>
+        <Link to={'/main'}>Main</Link>
         <Link to={"/about"}>About</Link>
 
         <Outlet />

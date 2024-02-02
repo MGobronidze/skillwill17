@@ -2,6 +2,7 @@ import LinkLayouts from "./Layouts/LinkLayouts";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
 import MainPage from "./pages/MainPage";
+import ParamPage from "./pages/ParamPage";
 
 const router =[
     { 
@@ -21,6 +22,10 @@ const router =[
                 path: "/about"
             }
         ]
+    },
+    {
+        element: <ParamPage />,
+        path: '/users/:id'
     }
 ]
 

@@ -1,14 +1,21 @@
+import LinkLayouts from "./Layouts/LinkLayouts";
 import AboutPage from "./pages/AboutPage";
 import MainPage from "./pages/MainPage";
 
 const router =[
-    {
-        element: <MainPage />,
-        path: "/"
-    },
-    {
-        element: <AboutPage />,
-        path: "/About"
+    { 
+        element: <LinkLayouts />,
+        path: '/',
+        children:[
+            {
+                element: <MainPage />,
+                path: "/main"
+            },
+            {
+                element: <AboutPage />,
+                path: "/About"
+            }
+        ]
     }
 ]
 
